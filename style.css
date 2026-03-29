@@ -9,10 +9,10 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    background-color: #F3EFE6;
 }
 
 header {
-    background-color: #F3EFE6;
     border-top: 6px solid #5E6F3A;
     height: 130px;
 }
@@ -79,6 +79,33 @@ header {
     position: relative;
 }
 
+/* banner main*/
+.banner-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-main img {
+    width: 100%;
+    height: auto;
+}
+
+.botao-preparar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.botao-preparar a {
+    background-color: #CF6F24;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+}
+
 
 /* PCS e Notebooks */
 @media (min-width: 992px) {
@@ -99,6 +126,17 @@ header {
 
     #menu-icon {
         display: none;
+    }
+
+    .banner-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-main img {
+        width: 80%;
+        height: auto;
     }
 
 }
