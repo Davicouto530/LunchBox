@@ -14,4 +14,4 @@
 - Gabriel Lima
 - Davi do Couto
 - luiz Damas
-- Richard Alvez
+- Richard Alves
