@@ -1,3 +1,4 @@
 *.yml
 dockerfile
 web/
+404.html

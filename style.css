@@ -140,3 +140,103 @@ header {
     }
 
 }
+.sobre-classe { /* classe principal */
+  max-width: 800px; /*  largura max */ 
+  margin: 0 auto; /* sem espaçamento (superior e inferior), automatico para horizontal (no meio/centralizado) */
+  padding: 50px 24px 70px; /* topo, lateral, inferior (: */
+  font-weight: 500; 
+}
+ 
+.sobre-classe h1 { /* titulo */
+  font-family: 'Poppins', sans-serif; /* fonte (condicional / poppins ou sans-serif) */
+  font-size: clamp(1.6rem, 4vw, 2.2rem); /* tamanho relativo (minimo, preferncial e maximo) */
+  color: #374122; /* dentro da paleta */
+  margin-bottom: 12px; /* espaçamento */ 
+}
+ 
+/* formatação de texto para o restante da pág */
+.sobre-classe h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: #CF6F24;
+  margin: 40px 0 10px;
+}
+ 
+.sobre-classe p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+.sobre-classe ol {
+  margin: 15px 0 0 20px;
+  color: #444;
+  line-height: 2;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.sobre-classe ol p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.8;
+    font-weight: 500;
+} 
+.divisor {
+  border: none;
+  border-top: 1px solid #ddd8cc;
+  margin: 40px 0;
+}
+ 
+
+/* tabela / cartoes */
+.tabela-grades {
+  display: grid; /* grade (resp) */
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px; /* espaço entre um e outro */
+  margin-top: 16px; /* escape do topo */
+}
+ 
+.tabela-celula { /* acabamento da "celula" */
+  background: #fff;
+  border-radius: 14px; /* arred */
+  padding: 24px 16px;   /* topo, lateral e inferior (: */ 
+  text-align: center;
+}
+ 
+.tabela-circulo {
+    /* altura / largura  */
+  width: 56px;
+  height: 56px;
+  border-radius: 50%; /* transforma em circulo */
+  background: #5E6F3A; 
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+}
+ 
+.tabela-celula h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #374122;
+  margin-bottom: 4px;
+  font-weight: normal;
+}
+ 
+.tabela-celula p {
+  font-size: 0.85rem;
+  color: #888;
+}
+.tabela-celula p a {
+  text-decoration: none;   /* remove sublinhado */
+  color: inherit;          /* herda a cor do <p> */
+  display: inline-block;   /* mantém só o tamanho do texto */
+}
+ 
+@media (max-width: 576px) {
+  .sobre-classe { padding: 36px 16px 50px; }
+  .tabela-grades { grid-template-columns: repeat(2, 1fr); }
+}
