@@ -42,7 +42,8 @@ botaoGerarlista.addEventListener('click', function() {
     let conteudo 
     const temVazio = todasOpções.some(s => s === '');
     if (temVazio) {
-        conteudo = `<h2>opção vazia.</h2>`;
+        conteudo = `<h2>opção vazia.</h2>
+        <button id="fecharModal">Fechar</button>`;
     }
     else {
         conteudo = `<h2>Oque comprar ao decorrer da semana?</h2>
@@ -52,7 +53,9 @@ botaoGerarlista.addEventListener('click', function() {
             <p><strong>Quinta:</strong>  ${seleçãoQuintaAlmoço}  / ${seleçãoQuintaJantar}</p>
             <p><strong>Sexta:</strong>   ${seleçãoSextaAlmoço}   / ${seleçãoSextaJantar}</p>
             <p><strong>Sábado:</strong>  ${seleçãoSabadoAlmoço}  / ${seleçãoSabadoJantar}</p>
-            <p><strong>Domingo:</strong> ${seleçãoDomingoAlmoço} / ${seleçãoDomingoJantar}</p>`
+            <p><strong>Domingo:</strong> ${seleçãoDomingoAlmoço} / ${seleçãoDomingoJantar}</p>
+            <button id="fecharModal">Fechar</button>
+            `
     }
     //adicionando a tela principal
     modal.innerHTML = conteudo
@@ -60,4 +63,8 @@ botaoGerarlista.addEventListener('click', function() {
     //junta o fundo com o modal e adiciona na tela
     overlay.appendChild(modal);
     document.body.appendChild(overlay);
+    //fechar o modal
+    const fechar = () => overlay.remove();
+    modal.querySelector('#fecharModal').addEventListener('click', fechar);
+    
 })
