@@ -21,40 +21,59 @@ botaoGerarlista.addEventListener('click', function() {
     //CSS do fundo
    const overlay = document.createElement('div');
    Object.assign(overlay.style, {
-    position:       'fixed',
-    inset:          '0',
-    background:     'rgba(0,0,0,.5)',
-    display:        'flex',
-    alignItems:     'center',
-    justifyContent: 'center',})
+     position:        'fixed',
+  inset:           '0',
+  background:      'rgba(0,0,0,.5)',
+  display:         'flex',
+  alignItems:      'flex-end',      // gruda no fundo da tela
+  justifyContent:  'center',})
 
     
     //css do modal
     const modal = document.createElement('div');
     Object.assign(modal.style, {
-    background:   '#fff',
-    borderRadius: '12px',
-    padding:      '2rem',
-    width:        'min(90%, 400px)',
-    position:     'relative',})
+    background:      '#fff',
+    borderRadius:    '20px 20px 0 0',  // arredonda só o topo
+    padding:         '2rem',
+    width:           '100%',           // largura total
+    maxHeight:       '90vh',           // no máximo 90% da tela
+    overflowY:       'auto',           // scroll se o conteúdo for grande
+    position:        'relative',
+    fontFamily:    'Poppins, sans-serif',
+    
+    })
     
     //conteudo do modal
     let conteudo 
     const temVazio = todasOpções.some(s => s === '');
     if (temVazio) {
         conteudo = `<h2>opção vazia.</h2>
-        <button id="fecharModal">Fechar</button>`;
+        <button id="fecharModal" style="padding: .6rem 1.4rem; border-radius: 8px; border: none; background: #CF6F24; color: #fff; font-size: 1rem; cursor: pointer;>Fechar</button>`;
     }
     else {
-        conteudo = `<h2>Oque comprar ao decorrer da semana?</h2>
-         <p><strong>Segunda:</strong> ${seleçãoSegundaAlmoço} / ${seleçãoSegundaJantar}</p>
-            <p><strong>Terça:</strong>   ${seleçãoTercaAlmoço}   / ${seleçãoTercaJantar}</p>
-            <p><strong>Quarta:</strong>  ${seleçãoQuartaAlmoço}  / ${seleçãoQuartaJantar}</p>
-            <p><strong>Quinta:</strong>  ${seleçãoQuintaAlmoço}  / ${seleçãoQuintaJantar}</p>
-            <p><strong>Sexta:</strong>   ${seleçãoSextaAlmoço}   / ${seleçãoSextaJantar}</p>
-            <p><strong>Sábado:</strong>  ${seleçãoSabadoAlmoço}  / ${seleçãoSabadoJantar}</p>
-            <p><strong>Domingo:</strong> ${seleçãoDomingoAlmoço} / ${seleçãoDomingoJantar}</p>
-            <button id="fecharModal">Fechar</button>
+        conteudo =
+            `<h2>Igredintes da semana</h2>
+            <p><strong>Segunda:</strong> <br>
+            Almoço: ${seleçãoSegundaAlmoço} <br><br> Jantar: ${seleçãoSegundaJantar}</p>
+            <hr>
+            <p><strong>Terça:</strong> <br>
+            Almoço: ${seleçãoTercaAlmoço} <br><br> Jantar: ${seleçãoTercaJantar}</p>
+            <hr>
+            <p><strong>Quarta:</strong> <br>
+            Almoço: ${seleçãoQuartaAlmoço} <br><br> Jantar: ${seleçãoQuartaJantar}</p>
+            <hr>
+            <p><strong>Quinta:</strong> <br>
+            Almoço: ${seleçãoQuintaAlmoço} <br><br> Jantar: ${seleçãoQuintaJantar}</p>
+            <hr>
+            <p><strong>Sexta:</strong> <br>
+            Almoço: ${seleçãoSextaAlmoço} <br><br> Jantar: ${seleçãoSextaJantar}</p>
+            <hr>
+            <p><strong>Sábado:</strong> <br>
+            Almoço: ${seleçãoSabadoAlmoço} <br><br> Jantar: ${seleçãoSabadoJantar}</p>
+            <hr>
+            <p><strong>Domingo:</strong> <br>
+            Almoço: ${seleçãoDomingoAlmoço} <br><br> Jantar: ${seleçãoDomingoJantar}</p>
+            <button id="fecharModal" style="padding: .6rem 1.4rem; border-radius: 8px; border: none; background: #CF6F24; color: #fff; font-size: 1rem; cursor: pointer;">Fechar</button>
             `
     }
     //adicionando a tela principal
