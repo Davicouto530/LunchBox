@@ -21,7 +21,7 @@ botaoGerarlista.addEventListener('click', function() {
     //CSS do fundo
    const overlay = document.createElement('div');
    Object.assign(overlay.style, {
-     position:        'fixed',
+    position:        'fixed',
   inset:           '0',
   background:      'rgba(0,0,0,.5)',
   display:         'flex',
@@ -32,7 +32,7 @@ botaoGerarlista.addEventListener('click', function() {
     //css do modal
     const modal = document.createElement('div');
     Object.assign(modal.style, {
-    background:      '#fff',
+    background:      '#F3EFE6',
     borderRadius:    '20px 20px 0 0',  // arredonda só o topo
     padding:         '2rem',
     width:           '100%',           // largura total
@@ -48,7 +48,9 @@ botaoGerarlista.addEventListener('click', function() {
     const temVazio = todasOpções.some(s => s === '');
     if (temVazio) {
         conteudo = `<h2>opção vazia.</h2>
-        <button id="fecharModal" style="padding: .6rem 1.4rem; border-radius: 8px; border: none; background: #CF6F24; color: #fff; font-size: 1rem; cursor: pointer;>Fechar</button>`;
+                    <button id="fecharModal" style="margin-top: 10px;padding: .6rem 1.4rem; border-radius: 8px; border: none; background: #CF6F24; color: #fff; font-size: 1rem; cursor: pointer;">Fechar</button>`;
+        
+       
     }
     else {
         conteudo =
@@ -73,7 +75,7 @@ botaoGerarlista.addEventListener('click', function() {
             <hr>
             <p><strong>Domingo:</strong> <br>
             Almoço: ${seleçãoDomingoAlmoço} <br><br> Jantar: ${seleçãoDomingoJantar}</p>
-            <button id="fecharModal" style="padding: .6rem 1.4rem; border-radius: 8px; border: none; background: #CF6F24; color: #fff; font-size: 1rem; cursor: pointer;">Fechar</button>
+            <button id="fecharModal" style="margin-top: 10px;padding: .6rem 1.4rem; border-radius: 8px; border: none; background: #CF6F24; color: #fff; font-size: 1rem; cursor: pointer;">Fechar</button>
             `
     }
     //adicionando a tela principal
