@@ -25,7 +25,7 @@ botaoGerarlista.addEventListener('click', function() {
   inset:           '0',
   background:      'rgba(0,0,0,.5)',
   display:         'flex',
-  alignItems:      'flex-end',      // gruda no fundo da tela
+  alignItems:      'center',      // gruda no fundo da tela
   justifyContent:  'center',})
 
     
@@ -33,11 +33,12 @@ botaoGerarlista.addEventListener('click', function() {
     const modal = document.createElement('div');
     Object.assign(modal.style, {
     background:      '#F3EFE6',
-    borderRadius:    '20px 20px 0 0',  // arredonda só o topo
+    borderRadius:    '10px 10px',  
     padding:         '2rem',
-    width:           '100%',           // largura total
-    maxHeight:       '90vh',           // no máximo 90% da tela
-    overflowY:       'auto',           // scroll se o conteúdo for grande
+    width:           '90%',           // largura total
+    maxHeight:       '95vh',          
+    overflowY:       'auto',           
+    scrollbarWidth:   'none',           
     position:        'relative',
     fontFamily:    'Poppins, sans-serif',
     
