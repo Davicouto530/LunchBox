@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F3EFE6;
+}
+
+.semana-cards__topo {
+    text-align: center;
+}
+
+.semana-cards__topo span {
+    color: #5E6F3A;
+}
+
+.semana-cards__topo h1 {
+    margin-top: 10px;
+    color: #CF6F24;
+}
+
+.semana-cards__topo p {
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+.semana-cards {
+    padding: 32px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.card-dia {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 16px 20px;
+    transition: 0.2s;
+    margin-left: 12px;
+}
+
+.card-dia:hover {
+    transform: scale(1.05);
+}
+
+.card-dia h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #CF6F24;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #F3EFE6;
+}
+
+.card-dia__item {
+    margin-bottom: 12px;
+}
+
+.card-dia__item label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.card-dia__item label {
+    color: #5E6F3A;
+}
+
+.card-dia__item select {
+    width: 250px;
+    font-size: 12px;
+    color: #333;
+    background-color: #F9F7F3;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 6px 8px;
+    cursor: pointer;
+    outline: none;
+}
+
+.botao-salvar {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.botao-salvar button {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #5E6F3A;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 36px;
+    cursor: pointer;
+}
+
+.botao-salvar button:hover {
+    background-color: #4a5a2c;
+}
