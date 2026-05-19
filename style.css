@@ -13,7 +13,6 @@ body {
 }
 
 header {
-    border-top: 6px solid #5E6F3A;
     height: 130px;
 }
 
@@ -30,7 +29,6 @@ header {
     cursor: pointer;
 }
 
-/* MOBILE MENU (desliza da direita) */
 .nav-list {
     position: fixed;
     top: 0;
@@ -66,12 +64,10 @@ header {
     color: #3741229c;
 }
 
-/* quando clicar abre */
 .nav-list.ativo {
     left: 0;
 }
 
-/* menu hamburguer visível no mobile */
 #menu-icon img {
     width: 28px;
     cursor: pointer;
@@ -79,7 +75,6 @@ header {
     position: relative;
 }
 
-/* banner main*/
 .banner-main {
     display: flex;
     justify-content: center;
@@ -106,7 +101,6 @@ header {
     border-radius: 10px;
 }
 
-/* seção sobre */
 .botao-sobre a {
     background-color: #5E6F3A;
     padding: 15px;
@@ -129,12 +123,11 @@ header {
 }
 
 #sobre-fundo {
-
     background-image: url(img/fundoSobre.png);
-    background-size: 100%;
+    background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 200px;
+    height: 120px;
 }
 
 
@@ -170,7 +163,6 @@ header {
         height: auto;
     }
 
-    /* seção sobre */
     .botao-sobre a {
         background-color: #5E6F3A;
         padding: 15px;
@@ -191,14 +183,11 @@ header {
     }
 
     #sobre-fundo {
-
         background-image: url(img/fundoSobre.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-
-        height: 650px;
-
+        height: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -213,29 +202,19 @@ header {
 }
 
 .sobre-classe {
-    /* classe principal */
     max-width: 800px;
-    /*  largura max */
     margin: 0 auto;
-    /* sem espaçamento (superior e inferior), automatico para horizontal (no meio/centralizado) */
     padding: 50px 24px 70px;
-    /* topo, lateral, inferior (: */
     font-weight: 500;
 }
 
 .sobre-classe h1 {
-    /* titulo */
     font-family: 'Poppins', sans-serif;
-    /* fonte (condicional / poppins ou sans-serif) */
     font-size: clamp(1.6rem, 4vw, 2.2rem);
-    /* tamanho relativo (minimo, preferncial e maximo) */
     color: #374122;
-    /* dentro da paleta */
     margin-bottom: 12px;
-    /* espaçamento */
 }
 
-/* formatação de texto para o restante da pág */
 .sobre-classe h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
@@ -269,7 +248,6 @@ header {
     border-top: 1px solid #ddd8cc;
     margin: 40px 0;
 }
-
 
 .tabela-grades {
     display: grid;
