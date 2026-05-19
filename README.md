@@ -1,6 +1,6 @@
 # 🍱 LunchBox
 
-**LunchBox** é um website desenvolvido como projeto de faculdade, com o objetivo de ajudar na organização das marmitas ao longo do mês.
+**LunchBox** é um website desenvolvido como projeto de faculdade, com o objetivo de ajudar na organização das marmitas ao longo da semana.
 
 
 ## 💡 Tecnologias Utilizadas
