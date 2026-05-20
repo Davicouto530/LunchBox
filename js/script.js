@@ -11,3 +11,11 @@ menuIcon.addEventListener('click', () => {
         document.querySelector('#menu-icon img').src = '/img/close.png';
     }
 })
+
+// Colocando o ano automaticamente 
+const pRodape = document.getElementById("pAno");
+const data = new Date();
+
+const dataAno = data.getFullYear();
+
+pRodape.innerHTML += ` ${dataAno} LunchBox`;

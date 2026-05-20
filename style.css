@@ -130,6 +130,15 @@ header {
     height: 120px;
 }
 
+@media (max-width: 576px) {
+    .sobre-classe {
+        padding: 36px 16px 50px;
+    }
+
+    .tabela-grades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 /* PCS e Notebooks */
 @media (min-width: 992px) {
@@ -297,12 +306,3 @@ header {
     display: inline-block;
 }
 
-@media (max-width: 576px) {
-    .sobre-classe {
-        padding: 36px 16px 50px;
-    }
-
-    .tabela-grades {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}

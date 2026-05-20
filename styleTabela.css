@@ -75,29 +75,6 @@ body {
     position: relative;
 }
 
-/* PCS e Notebooks */
-@media (min-width: 992px) {
-
-    .nav-list {
-        position: static;
-        height: auto;
-        background: transparent;
-        margin-left: auto;
-        justify-content: flex-end;
-        padding: 0 30px;
-    }
-
-    .nav-list ul {
-        flex-direction: row;
-        gap: 30px;
-    }
-
-    #menu-icon {
-        display: none;
-    }
-
-}
-
 .semana-cards__topo {
     text-align: center;
 }
@@ -196,4 +173,27 @@ body {
 
 .botao-salvar button:hover {
     background-color: #4a5a2c;
+}
+
+/* PCS e Notebooks */
+@media (min-width: 992px) {
+
+    .nav-list {
+        position: static;
+        height: auto;
+        background: transparent;
+        margin-left: auto;
+        justify-content: flex-end;
+        padding: 0 30px;
+    }
+
+    .nav-list ul {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
 }
