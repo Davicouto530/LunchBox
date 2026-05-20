@@ -50,30 +50,28 @@ botaoGerarlista.addEventListener('click', function() {
     if (temVazio) {
         conteudo = `<h2>opção vazia.</h2>
                     <button id="fecharModal" style="margin-top: 10px;padding: .6rem 1.4rem; border-radius: 8px; border: none; background: #CF6F24; color: #fff; font-size: 1rem; cursor: pointer;">Fechar</button>`;
-        
-       
     }
     else {
         conteudo =
             `<h2>Igredintes da semana</h2>
             <p><strong>Segunda:</strong> <br>
             Almoço: ${seleçãoSegundaAlmoço} <br><br> Jantar: ${seleçãoSegundaJantar}</p>
-            <hr>
+            <hr style="background-color: #374122;border: 0px; height: 2px;">
             <p><strong>Terça:</strong> <br>
             Almoço: ${seleçãoTercaAlmoço} <br><br> Jantar: ${seleçãoTercaJantar}</p>
-            <hr>
+            <hr style="background-color: #374122;border: 0px; height: 2px;">
             <p><strong>Quarta:</strong> <br>
             Almoço: ${seleçãoQuartaAlmoço} <br><br> Jantar: ${seleçãoQuartaJantar}</p>
-            <hr>
+            <hr style="background-color: #374122;border: 0px; height: 2px;">
             <p><strong>Quinta:</strong> <br>
             Almoço: ${seleçãoQuintaAlmoço} <br><br> Jantar: ${seleçãoQuintaJantar}</p>
-            <hr>
+            <hr style="background-color: #374122;border: 0px; height: 2px;">
             <p><strong>Sexta:</strong> <br>
             Almoço: ${seleçãoSextaAlmoço} <br><br> Jantar: ${seleçãoSextaJantar}</p>
-            <hr>
+            <hr style="background-color: #374122;border: 0px; height: 2px;">
             <p><strong>Sábado:</strong> <br>
             Almoço: ${seleçãoSabadoAlmoço} <br><br> Jantar: ${seleçãoSabadoJantar}</p>
-            <hr>
+            <hr style="background-color: #374122;border: 0px; height: 2px;">
             <p><strong>Domingo:</strong> <br>
             Almoço: ${seleçãoDomingoAlmoço} <br><br> Jantar: ${seleçãoDomingoJantar}</p>
             <button id="fecharModal" style="margin-top: 10px;padding: .6rem 1.4rem; border-radius: 8px; border: none; background: #CF6F24; color: #fff; font-size: 1rem; cursor: pointer;">Fechar</button>
