@@ -101,35 +101,85 @@ header {
     border-radius: 10px;
 }
 
-.botao-sobre a {
-    background-color: #5E6F3A;
-    padding: 15px;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 10px;
+#sobre-section {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-container {
+    background-color: #fff;
+    padding: 50px 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 700px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.sobre-container h2 {
+    font-size: 32px;
+    color: #374122;
+    margin-bottom: 20px;
+}
+
+.sobre-container p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 30px;
 }
 
 .botao-sobre {
-    margin-top: 5px;
+    display: inline-block;
+    background-color: #5E6F3A;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
-.sobre {
+.botao-sobre:hover {
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #fff;
+    padding: 40px 20px 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#navbarRodape {
+    margin-bottom: 24px;
+}
+
+.nav-list-rodape {
+    list-style: none;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    padding-top: 50px;
-    color: #374122;
+    gap: 16px;
 }
 
-#sobre-fundo {
-    background-image: url(img/fundoSobre.png);
-    background-size: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 120px;
+.nav-list-rodape .nav-item a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: #5E6F3A;
+    letter-spacing: 1px;
+    transition: 0.3s;
 }
 
+.nav-item a:hover {
+    color: #CF6F24;
+}
+
+#pAno {
+    font-size: 13px;
+    color: #444;
+}
+
+/* Tablets */
 @media (max-width: 576px) {
     .sobre-classe {
         padding: 36px 16px 50px;
@@ -172,34 +222,10 @@ header {
         height: auto;
     }
 
-    .botao-sobre a {
-        background-color: #5E6F3A;
-        padding: 15px;
-
-        text-decoration: none;
-        color: #fff;
-        border-radius: 10px;
-    }
-
-    .botao-sobre {
-        margin-top: 5px;
-    }
-
     .sobre {
         text-align: center;
         color: #374122;
         margin-bottom: 10px
-    }
-
-    #sobre-fundo {
-        background-image: url(img/fundoSobre.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .sobre h2 {
@@ -207,6 +233,23 @@ header {
         margin-bottom: 10px;
     }
 
+    footer {
+        padding: 50px 80px 40px;
+    }
+
+    .nav-list-rodape {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #nome-ano {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 32px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
 
 }
 
@@ -218,21 +261,19 @@ header {
 }
 
 .sobre-classe h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-size: 35px;
     color: #374122;
     margin-bottom: 12px;
 }
 
 .sobre-classe h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-size: 17px;
     color: #CF6F24;
     margin: 40px 0 10px;
 }
 
 .sobre-classe p {
-    font-size: 1rem;
+    font-size: 15px;
     color: #444;
     line-height: 1.8;
 }
@@ -241,12 +282,12 @@ header {
     margin: 15px 0 0 20px;
     color: #444;
     line-height: 2;
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 800;
 }
 
 .sobre-classe ol p {
-    font-size: 1rem;
+    font-size: 15px;
     color: #444;
     line-height: 1.8;
     font-weight: 500;
@@ -302,7 +343,6 @@ header {
 
 .tabela-celula p a {
     text-decoration: none;
-    color: inherit;
+    color: #CF6F24;
     display: inline-block;
 }
-
