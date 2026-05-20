@@ -1,3 +1,7 @@
+let menuIcon = document.querySelector('#menu-icon');
+let ul = document.querySelector('.nav-list');
+let ip = "http://10.26.45.42:5000/api/v1";
+
 const botaoGerarlista = document.getElementById('botao-salvar');
 
 botaoGerarlista.addEventListener('click', function() {
@@ -88,3 +92,21 @@ botaoGerarlista.addEventListener('click', function() {
     modal.querySelector('#fecharModal').addEventListener('click', fechar);
     
 })
+
+menuIcon.addEventListener('click', () => {
+    if (ul.classList.contains('ativo')) {
+        ul.classList.remove('ativo');
+        document.querySelector('#menu-icon img').src = '/img/menu-aberto.png'
+    } else {
+        ul.classList.add('ativo');
+        document.querySelector('#menu-icon img').src = '/img/close.png';
+    }
+})
+
+// Colocando o ano automaticamente 
+const pRodape = document.getElementById("pAno");
+const data = new Date();
+
+const dataAno = data.getFullYear();
+
+pRodape.innerHTML += ` ${dataAno} LunchBox`;
